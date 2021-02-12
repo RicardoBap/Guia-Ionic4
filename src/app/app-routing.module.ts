@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'componente-action-sheet',
     loadChildren: () => import('./componente-action-sheet/componente-action-sheet.module').then( m => m.ComponenteActionSheetPageModule)
+  },
+  {
+    path: 'componente-alert',
+    loadChildren: () => import('./componente-alert/componente-alert.module').then( m => m.ComponenteAlertPageModule)
   }
 ];
 
