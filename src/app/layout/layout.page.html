@@ -8,9 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-button expand="full" (click)="openLayoutHeaderFooter()">Header e Footer</ion-button>
-  <ion-button expand="full" (click)="openLayoutTabs()">Tabs</ion-button>
-  <ion-button expand="full" (click)="openLayoutMenu()">Menu</ion-button>
-  <ion-button expand="full" (click)="openLayoutSplit()">Split Pane</ion-button>
+  <ion-button expand="full" (click)="abrirPagina('layout-header-footer')">Header e Footer</ion-button>
+  <ion-button expand="full" (click)="abrirPagina('layout-tabs')">Tabs</ion-button>
+  <ion-button expand="full" (click)="abrirPagina('layout-menu')">Menu</ion-button>
+  <ion-button expand="full" (click)="abrirPagina('layout-split')">Split Pane</ion-button>
+
+  <ion-button expand="full" (click)="abrirPagina('layout-grid')">Grid</ion-button>
 
 </ion-content>

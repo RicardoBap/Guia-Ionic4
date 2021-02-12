@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'layout-split',
     loadChildren: () => import('./layout-split/layout-split.module').then( m => m.LayoutSplitPageModule)
+  },
+  {
+    path: 'layout-grid',
+    loadChildren: () => import('./layout-grid/layout-grid.module').then( m => m.LayoutGridPageModule)
   }
 ];
 

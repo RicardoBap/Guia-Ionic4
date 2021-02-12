@@ -1,0 +1,18 @@
+ion-grid {
+    --ion-grid-columns: 13;
+    ion-row {
+        
+        ion-col {
+            background-color: red;
+            margin: 1px;
+            text-align: center;
+        }
+    }
+}
+
+.alinha1 {
+    align-items: end;
+}
+.alinha2 {
+    align-items: center;
+}
