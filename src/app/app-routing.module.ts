@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'componente-botao',
     loadChildren: () => import('./componente-botao/componente-botao.module').then( m => m.ComponenteBotaoPageModule)
+  },
+  {
+    path: 'componente-card',
+    loadChildren: () => import('./componente-card/componente-card.module').then( m => m.ComponenteCardPageModule)
   }
  
 ];
