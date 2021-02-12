@@ -6,7 +6,18 @@ import { LayoutTabsPage } from './layout-tabs.page';
 const routes: Routes = [
   {
     path: '',
-    component: LayoutTabsPage
+    component: LayoutTabsPage,
+    children: [
+      {
+        path: 'home',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
+          }
+        ]
+      }
+    ]    
   }
 ];
 
