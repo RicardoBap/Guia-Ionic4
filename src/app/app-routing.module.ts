@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'componente-badges',
     loadChildren: () => import('./componente-badges/componente-badges.module').then( m => m.ComponenteBadgesPageModule)
+  },
+  {
+    path: 'componente-botao',
+    loadChildren: () => import('./componente-botao/componente-botao.module').then( m => m.ComponenteBotaoPageModule)
   }
  
 ];
