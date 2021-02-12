@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'layout-grid',
     loadChildren: () => import('./layout-grid/layout-grid.module').then( m => m.LayoutGridPageModule)
+  },
+  {
+    path: 'layout-css-utilities',
+    loadChildren: () => import('./layout-css-utilities/layout-css-utilities.module').then( m => m.LayoutCssUtilitiesPageModule)
   }
 ];
 
