@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Checkbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Default</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-checkbox disabled="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Checked</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Disabled + Checked</ion-label>
+    <ion-checkbox disabled="true" checked="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cor primary</ion-label>
+    <ion-checkbox color="primary"></ion-checkbox>    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cor secondary</ion-label>
+    <ion-checkbox color="secondary"></ion-checkbox>    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cor danger</ion-label>
+    <ion-checkbox color="danger"></ion-checkbox>    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cor success</ion-label>
+    <ion-checkbox color="success"></ion-checkbox>    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cor light</ion-label>
+    <ion-checkbox color="light"></ion-checkbox>    
+  </ion-item>
+
+  <h3>Meses</h3>
+  <ion-list>
+    <ion-item *ngFor="let m of meses">
+      <ion-label>{{ m.nomeDoMes }}</ion-label>
+      <ion-checkbox checked="{{ m.marcado }}" [(ngModel)]="m.marcado" color="light"></ion-checkbox>    
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="exibirMeses()">Exibir meses marcados</ion-button>
+
+
+</ion-content>

@@ -66,6 +66,10 @@ const routes: Routes = [
   {
     path: 'componente-card',
     loadChildren: () => import('./componente-card/componente-card.module').then( m => m.ComponenteCardPageModule)
+  },
+  {
+    path: 'componente-checkbox',
+    loadChildren: () => import('./componente-checkbox/componente-checkbox.module').then( m => m.ComponenteCheckboxPageModule)
   }
  
 ];
