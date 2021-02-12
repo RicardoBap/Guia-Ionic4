@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'componente-checkbox',
     loadChildren: () => import('./componente-checkbox/componente-checkbox.module').then( m => m.ComponenteCheckboxPageModule)
+  },
+  {
+    path: 'componente-radio',
+    loadChildren: () => import('./componente-radio/componente-radio.module').then( m => m.ComponenteRadioPageModule)
   }
  
 ];

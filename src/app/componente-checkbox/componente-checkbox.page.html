@@ -58,7 +58,7 @@
   <ion-list>
     <ion-item *ngFor="let m of meses">
       <ion-label>{{ m.nomeDoMes }}</ion-label>
-      <ion-checkbox checked="{{ m.marcado }}" [(ngModel)]="m.marcado" color="light"></ion-checkbox>    
+      <ion-checkbox slot="start" checked="{{ m.marcado }}" [(ngModel)]="m.marcado" color="light"></ion-checkbox>    
     </ion-item>
   </ion-list>
   <ion-button (click)="exibirMeses()">Exibir meses marcados</ion-button>
