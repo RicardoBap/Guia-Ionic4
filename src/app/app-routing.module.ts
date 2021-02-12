@@ -54,7 +54,12 @@ const routes: Routes = [
   {
     path: 'componente-alert',
     loadChildren: () => import('./componente-alert/componente-alert.module').then( m => m.ComponenteAlertPageModule)
+  },
+  {
+    path: 'componente-badges',
+    loadChildren: () => import('./componente-badges/componente-badges.module').then( m => m.ComponenteBadgesPageModule)
   }
+ 
 ];
 
 @NgModule({
