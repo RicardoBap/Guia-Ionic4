@@ -78,6 +78,10 @@ const routes: Routes = [
   {
     path: 'componente-date-time',
     loadChildren: () => import('./componente-date-time/componente-date-time.module').then( m => m.ComponenteDateTimePageModule)
+  },
+  {
+    path: 'componente-fab',
+    loadChildren: () => import('./componente-fab/componente-fab.module').then( m => m.ComponenteFabPageModule)
   }
  
 ];
