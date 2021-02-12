@@ -42,6 +42,14 @@ const routes: Routes = [
   {
     path: 'layout-css-utilities',
     loadChildren: () => import('./layout-css-utilities/layout-css-utilities.module').then( m => m.LayoutCssUtilitiesPageModule)
+  },
+  {
+    path: 'componentes',
+    loadChildren: () => import('./componentes/componentes.module').then( m => m.ComponentesPageModule)
+  },
+  {
+    path: 'componente-action-sheet',
+    loadChildren: () => import('./componente-action-sheet/componente-action-sheet.module').then( m => m.ComponenteActionSheetPageModule)
   }
 ];
 
