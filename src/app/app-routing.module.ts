@@ -82,6 +82,10 @@ const routes: Routes = [
   {
     path: 'componente-fab',
     loadChildren: () => import('./componente-fab/componente-fab.module').then( m => m.ComponenteFabPageModule)
+  },
+  {
+    path: 'componente-input',
+    loadChildren: () => import('./componente-input/componente-input.module').then( m => m.ComponenteInputPageModule)
   }
  
 ];
